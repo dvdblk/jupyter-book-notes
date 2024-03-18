@@ -1,0 +1,37 @@
+title: My JupyBook notes 🌝
+author: David Alex Bielik
+copyright: "2024"
+
+# Force re-execution of notebooks on each build.
+# See https://jupyterbook.org/content/execute.html
+execute:
+  execute_notebooks: force
+
+
+# Add GitHub buttons to your book
+# See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
+html:
+  use_issues_button: true
+  use_repository_button: true
+
+  comments:
+    utterances:
+      repo: "dvdblk/jupyter-book-notes"
+
+# Define the name of the latex output file for PDF builds
+latex:
+  latex_documents:
+    targetname: book.tex
+
+# Add a bibtex file so that we can create citations
+bibtex_bibfiles:
+  - references.bib
+
+repository:
+  url: https://github.com/dvdblk/jupyter-book-notes
+  path_to_book: books
+  branch: main
+
+sphinx:
+  config:
+    bibtex_reference_style: author_year
